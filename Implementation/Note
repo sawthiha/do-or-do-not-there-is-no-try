@@ -1,0 +1,123 @@
+Fuzzification
+- Three or more MFs
+- Quality Qi(x) = {, normal, excellent}
+- The shape of Qi can be diverse. Usually triangles and trapezoids(actually pseudo-trapezoids)
+- Thus, we need three or four points at least if we are to use usual functions.
+
+[Database]
+
+**************************Archive Solutions**************************
+https://dba.stackexchange.com/questions/28655/database-archive-solutions
+
+**************************Schema**************************
+meta.Student
+- NRC
+- USN
+- Batch
+
+active.Student
+- Name
+- Major
+- Degree
+- Address
+- Guardian
+- Year
+- Roll
+
+active.StudentAll like active.Student
+active.StudentArchive inherits active.StudentAll
+active.Student inherits active.StudentAll
+
+meta.Teacher
+- ID
+- Name
+- Degrees
+
+meta.Subject
+- Code
+- Name
+- Description
+- Field
+- Final
+- Tutorial
+- Practical
+
+meta.Department
+- Name
+- Major
+
+meta.Field
+- Name
+- Description
+
+meta.Degree
+- Type
+- Field
+- Host
+- Date
+
+active.<Subject><>
+- marks
+- timestamp
+- duration
+
+active.MarksAll like active.Marks
+active.MarksArchive inherits activeMarksAll
+active.Marks inherits active.MarksAll
+
+active.<Subject>
+- timestamp
+
+***********************************
+			Archives
+***********************************
+<year>.Student
+<year>.<subject><type>
+<year>.<Student>
+
+<Year><Subject><Type>
+- student
+- marks
+
+<date><Subject><Attendance>
+- Student
+- Duration
+- Time
+
+**************************<END> Schema**************************
+
+TODOs:
+Data Storage Schema **
+
+Data Storage Implementation ***
+
+Membership Functions ***
+	- Activities
+		- Attendance
+		- Rating
+	- Internal Marks
+		- Semester
+		- Tutorial
+		- Practical
+	- External Marks
+		- Internships
+		- Field Training
+		- Projects
+
+	- Output
+
+Membership Correlations ***
+
+Survey Preparation ***
+
+Survey Review with Supervisor ***
+
+Survey Candidates Selection ***
+
+Rules Extraction ***
+
+Knowledgebase Implementation ***
+Knoledge Inference System ***
+
+***************************Just-In-Time DB Schema***************************
+meta.Student
