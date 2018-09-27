@@ -1,0 +1,10 @@
+3.1 Gradient Descent
+3.2 Learning Rate
+3.3 Weight Decay
+3.4 First-order Optimization
+3.5 Set
+3.6 Fuzzy Set
+3.7 Fuzzy Logic Operations
+3.8 Fuzzy Inferenece System
+3.9 Fuzzy Methods
+3.10 Fuzziness in Neural Networks

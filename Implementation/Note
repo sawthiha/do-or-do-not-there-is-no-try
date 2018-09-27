@@ -119,5 +119,8 @@ Rules Extraction ***
 Knowledgebase Implementation ***
 Knoledge Inference System ***
 
-***************************Just-In-Time DB Schema***************************
-meta.Student
+roll
+attendance
+commends
+internal
+external
