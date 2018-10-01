@@ -5,6 +5,8 @@
 	4.1.4 Feedforward
 	4.1.5 Backward Propagation
 	4.1.6 Summary
+		Secttion 4.1 describes the implementations and solutions to problem that aries from case studies. The studies approves that tuning the parameters is inevitable if ANN is to achieve accuray and performance in certain problems. The hyperparameters will be learning rate and regularization so far. There are still rooms for improvement such as optimization algorithm, feedback ANN and sort of. Variants of square-of-error lost function are yet to be explored.
+
 4.2 Fuzzy System
 	4.2.1 Membership Functions
 	4.2.2 Fuzzy Termset
@@ -13,4 +15,7 @@
 	4.2.5 Fuzzy Rulebase
 	4.2.6 Fuzzy Contoller
 	4.2.7 Summary
-4.3 Integration
+		Section 4.2 is about the implemntations and the inference concepts of discrete fuzzy sets. The implementations are quite simple as the system is simple, having no adaption so far. Therefore, adaptation can be of use in further improvements, possibly neuro-fuzzy as fuzziness in neural networks.
+
+4.3 Summary
+	This chapter describes the overall system implementations and results where the next chapter will be about discussion and conclusion of the thesis. The implementations shown in this chapter are crude which means that software engineering principles are not yet applied. Therefore, code refactoring and quality control is to be done for sure.
